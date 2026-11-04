@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
@@ -39,10 +40,26 @@ app = FastAPI(
     version=settings.PROJECT_VERSION
 )
 
-# CORS Middleware
+# CORS Configuration
+ALLOWED_ORIGINS = [
+    "https://labgap1.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:8000",
+]
+
+cors_env = os.getenv("CORS_ORIGINS", "")
+if cors_env:
+    for orig in cors_env.split(","):
+        if orig.strip() and orig.strip() not in ALLOWED_ORIGINS:
+            ALLOWED_ORIGINS.append(orig.strip())
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

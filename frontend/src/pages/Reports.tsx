@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { api } from '../services/api';
+import { api, API_BASE_URL } from '../services/api';
 import { FileText, Download, Printer, RefreshCw, Calendar, CheckCircle } from 'lucide-react';
 import { Badge } from '../components/Badge';
 
@@ -25,7 +25,7 @@ export const Reports: React.FC = () => {
   }, [reportType]);
 
   const handleExportCsv = () => {
-    window.open(`http://localhost:8000/api/v1/reports/${reportType}?format=csv`, '_blank');
+    window.open(`${API_BASE_URL}/reports/${reportType}?format=csv`, '_blank');
   };
 
   const handlePrint = () => {
