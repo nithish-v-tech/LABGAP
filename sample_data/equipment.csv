@@ -1,0 +1,5 @@
+equipment_code,name,laboratory_code,total_quantity,functional_quantity,partially_functional_quantity,damaged_quantity,under_maintenance_quantity,maintenance_status
+EQ-01,Digital Storage Oscilloscope 100MHz,LAB-EC-01,12,9,1,2,0,Normal
+EQ-02,Function / Arbitrary Waveform Generator,LAB-EC-01,10,8,0,2,0,Normal
+EQ-06,ARM Cortex-M4 STM32 Development Board,LAB-MC-01,15,13,0,1,1,Scheduled
+EQ-11,Three-Phase Squirrel Cage Induction Motor 3HP,LAB-PS-01,4,1,0,2,1,Overdue

@@ -1,0 +1,10 @@
+{
+  "name": "labgap-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "backend": "cd backend && python -m uvicorn main:app --reload --port 8000"
+  }
+}

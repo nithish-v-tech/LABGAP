@@ -1,0 +1,5 @@
+experiment_code,name,description,laboratory_code,practical_competency,duration_hours,students_per_unit,min_safe_batch,max_safe_batch,completion_criteria
+EXP-EC-01,Inverting and Non-Inverting Op-Amp Amplifiers,Study op-amp voltage follower and inverting feedback gain,LAB-EC-01,Analog Circuit Synthesis,2.0,2,4,24,Calibrated oscilloscope reading and gain verification.
+EXP-EC-02,RC Phase Shift and Wien Bridge Oscillators,Design and simulate sinusoidal frequency oscillators,LAB-EC-01,Frequency Response Analysis,2.0,2,4,24,Sinusoidal waveform capture with zero distortion.
+EXP-MC-01,ARM Cortex-M4 GPIO Interfacing and Interrupts,Embedded programming on STM32 microcontroller,LAB-MC-01,Embedded C Firmware Design,2.0,2,4,26,Firmware flashing and real-time button interrupt handling.
+EXP-PS-01,Three-Phase Induction Motor Circle Diagram,Load characteristics and stator impedance calculation,LAB-PS-01,AC Machine Parameter Calculation,3.0,3,6,24,Torque-slip measurement and circle diagram plot.
